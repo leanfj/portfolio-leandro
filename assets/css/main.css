@@ -17,6 +17,10 @@ li {
 a {
   text-decoration: none;
 }
+span {
+  font-weight: 200;
+}
+
 
 .container  {
   max-width: 960px;
@@ -53,15 +57,13 @@ nav {
 }
 header h1 {
   width: 310px;
-  margin: 25vh auto 0 auto;
+  margin: 20vh auto 0 auto;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #f2f2f2;
 }
-header h1 span {
-  font-weight: 200;
-}
+
 header p {
   width: 305px;
   margin: 20px auto 0 auto;
@@ -81,9 +83,6 @@ header p {
 .skills-title h2 {
   width: 200px;
   margin: 0 auto;
-}
-.skills-title h2 span {
-  font-weight: 200;
 }
 .skills-description {
   width: 300px;
@@ -137,8 +136,46 @@ header p {
 }
 .connect h2 {
   display: inline-block;
-  margin-top: 10vh;
+  margin-top: 10px;
   text-transform: uppercase;
+}
+.connect-items {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.connect-items li {
+  margin-top: 10px;
+}
+.connect-items li a {
+  color: #1B1E25;
+}
+.contact-form {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.contact-form h3 {
+  text-align: center;
+}
+.contact-form form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px 0 0 25px;
+}
+.contact-form form input {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.contact-form form textarea {
+  margin-bottom: 10px;
+}
+.contact-form form button {
+  padding: 10px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
 }
 
 
