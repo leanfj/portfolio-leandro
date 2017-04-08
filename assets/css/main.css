@@ -34,16 +34,23 @@ header {
 }
 nav {
   border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
 }
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
   text-transform: uppercase;
 }
 .navigation li {
   padding: 5px;
+  margin-right: 20px;
+}
+.navigation li:last-child {
+  margin-right: 0;
 }
 .navigation li a {
   padding: 5px;
@@ -55,41 +62,37 @@ nav {
   background-color: #f2f2f2;
   color: #1B1E25; 
 }
-header h1 {
-  width: 200px;
-  margin: 20vh auto 0 auto;
-  padding: 5px;
+.name {
+  display: inline-block;
+  margin: 200px auto;
+  width: 100%;
+}
+.name h1{
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #f2f2f2;
 }
 
 header p {
-  width: 305px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
   text-align: justify;
 }
 .skills {
-  min-height: 100vh;
   background-color: #f2f2f2;
 }
 .skills-title {
-  text-align: center;  
+ 
 }
 .fa-code {
-  margin-top: 25vh;
   font-size: 100px;
 }
 .skills-title h2 {
-  width: 200px;
-  margin: 0 auto;
+
+
 }
 .skills-description {
-  width: 300px;
-  margin: 10px auto 0 auto;
-  padding: 5px;
-  border-left: 1px solid #1B1E25;
-  text-align: center;
+
 }
 .portfolio {
   min-height: 100vh;
@@ -228,13 +231,6 @@ footer {
     display: inline-block;    
     width: 200px;
     text-align: center;
-
-  }
-  .skills-description {
-    display: inline-block;
-    position: absolute;
-    top: 155px;
-    left: 450px;
   }
   .connect, .contact-form {
     padding: 90px;
@@ -245,14 +241,8 @@ footer {
  Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
 */
 @media screen and (min-width: 1200px) {
-  .skills-description {
-    top: 155px;
-    left: 550px;
-  }
+
 }
 @media screen and (min-width: 1440px) {
-  .skills-description {
-    top: 190px;
-    left: 660px;
-  }
+
 }
