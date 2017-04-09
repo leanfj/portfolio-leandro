@@ -43,11 +43,12 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
+  background-color: rgba(27, 30, 37, .5);
   text-transform: uppercase;
 }
 .navigation li {
   padding: 5px;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .navigation li:last-child {
   margin-right: 0;
@@ -60,39 +61,39 @@ nav {
 }
 .navigation li a:hover {
   background-color: #f2f2f2;
-  color: #1B1E25; 
+  color: #1B1E25;
 }
 .name {
   display: inline-block;
-  margin: 200px auto;
+  margin: 40vh auto;
   width: 100%;
 }
-.name h1{
+.name h1 {
+  width: 400px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #f2f2f2;
 }
-
-header p {
+.name h2 {
+  width: 350px;
   margin: 20px auto;
-  text-align: justify;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: center;
+}
+header p {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
 }
 .skills {
   background-color: #f2f2f2;
 }
-.skills-title {
- 
-}
 .fa-code {
   font-size: 100px;
 }
-.skills-title h2 {
-
-
-}
-.skills-description {
-
+.skills-description p {
+  width: 100%;
 }
 .portfolio {
   min-height: 100vh;
@@ -186,21 +187,21 @@ footer {
 
 /*MEDIA QUERIES*/
 
-/* 
- Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
-*/
-@media screen and (min-width: 768px) {
-  header h1 {
-    width: 400px;
-  }
-  header p {
+
+@media (max-width: 479px) {
+  .skills-description p {
     width: 450px;
   }
+}
+
+/*
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+
+
+@media (max-width: 767px) {
   .skills-title h2 {
     width: 400px;
-  }
-  .skills-description {
-    width: 500px;
   }
   .portfolio-description ul li {
     display: inline;
@@ -215,11 +216,11 @@ footer {
     padding: 60px;
   }
 }
- 
-/* 
+
+/*
  Com uma largura mínima de 992 pixels. Monitores por exemplo.
 */
-@media screen and (min-width: 992px) {
+@media  (min-width: 768px) and (max-width: 991px) {
   .skills {
     position: relative;
   }
@@ -228,7 +229,7 @@ footer {
     text-align: left;
   }
   .skills-title h2 {
-    display: inline-block;    
+    display: inline-block;
     width: 200px;
     text-align: center;
   }
@@ -236,13 +237,13 @@ footer {
     padding: 90px;
   }
 }
- 
-/* 
+
+/*
  Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
 */
-@media screen and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
 }
-@media screen and (min-width: 1440px) {
+@media (min-width: 1200px) {
 
 }
