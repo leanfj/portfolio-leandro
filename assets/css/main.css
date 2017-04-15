@@ -8,242 +8,193 @@
   -webkit-box-sizing: border-box;
 }
 body {
-  font-family: 'Source Code Pro', monospace;
-  color: #1B1E25;
+  font-family: 'Source Code Pro', sans-serif;
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 span {
   font-weight: 200;
 }
-
-
-.container  {
-  max-width: 960px;
-  margin: 0 auto;
-}
-header {
-  min-height: 100vh;
-  background-color: #1B1E25;
-  color: #f2f2f2;
-
-}
 nav {
-  border-bottom: 1px solid #f2f2f2;
-  position: fixed;
+  display: block;
   width: 100%;
-  z-index: 9999999;
+  background-color: #1B1E25;
 }
 .navigation {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-color: rgba(27, 30, 37, .5);
-  text-transform: uppercase;
+  flex-direction: column;
 }
 .navigation li {
-  padding: 5px;
-  margin-right: 50px;
-}
-.navigation li:last-child {
-  margin-right: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 .navigation li a {
-  padding: 5px;
-  border-radius: 5px;
+  display: block;
+  padding: 15px;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  text-transform: uppercase;
   color: #f2f2f2;
-  transition: 0.3s all;
-}
-.navigation li a:hover {
-  background-color: #f2f2f2;
-  color: #1B1E25;
 }
 .name {
-  display: inline-block;
-  margin: 40vh auto;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1B1E25;
+  color: #f2f2f2;
 }
 .name h1 {
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: uppercase;
+  margin-top: 50px;
   border: 1px solid #f2f2f2;
+  padding: 20px;
+  text-transform: uppercase;
 }
-.name h2 {
-  width: 350px;
-  margin: 20px auto;
-  border-bottom: 1px solid #f2f2f2;
-  text-align: center;
-}
-header p {
-  width: 100%;
-  margin: 30px auto;
-  text-align: center;
+.name p {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 .skills {
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .fa-code {
   font-size: 100px;
 }
-.skills-description p {
-  width: 100%;
+.skills h2 {
+  text-transform: uppercase;
+}
+.skills p {
+  text-align: justify;
+  padding: 20px;
 }
 .portfolio {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #1B1E25;
   color: #f2f2f2;
 }
-.portfolio-description {
-  text-align: center;
-}
-.portfolio-description h2 {
-  display: inline-block;
-  margin-top: 25vh;
+.portfolio h2 {
+  margin: 20px 0;
+  font-size: 2em;
   text-transform: uppercase;
 }
-.portfolio-description p {
-  margin-top: 10px;
-}
 .portfolio-items {
-  margin-top: 50px;
-  font-size: 20px;
-}
-.portfolio-items li {
-  margin-top: 20px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 }
 .portfolio-items li a {
+  display: block;
+  margin: 5px 0;
   padding: 10px;
   border: 1px solid #f2f2f2;
   border-radius: 5px;
+  font-size: 1.2em;
   color: #f2f2f2;
-  text-transform: uppercase;
-  transition: 0.3s all;
+  transition: .3s all;
 }
 .portfolio-items li a:hover {
   background-color: #f2f2f2;
   color: #1B1E25;
 }
+.portfolio-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+.portfolio-thumbs li {
+  margin: 5px;
+}
 .contact {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #2ABBAE;
 }
 .connect {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 }
 .connect h2 {
-  display: inline-block;
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 2em;
   text-transform: uppercase;
 }
-.connect-items {
-  margin-top: 20px;
-  font-size: 20px;
-}
-.connect-items li {
-  margin-top: 10px;
-}
-.connect-items li a {
-  color: #1B1E25;
-}
-.contact-form {
-  margin-top: 20px;
-  text-transform: uppercase;
+.connect-items li{
+  margin: 10px 0;
+  font-size: 1.5em;
 }
 .contact-form h3 {
-  text-align: center;
+  text-transform: uppercase;
 }
-.contact-form form {
+.contact-form form{
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 300px;
-  margin: 20px auto 0 auto;
+  align-items: stretch;
+  margin: 20px 0;
 }
-.contact-form form input {
-  margin-bottom: 10px;
-  line-height: 30px;
+.contact-form input {
+  margin: 5px 0;
+  font-size: 1.2em;
 }
-.contact-form form textarea {
-  margin-bottom: 10px;
+.contact-form textarea {
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
-.contact-form form button {
-  padding: 10px;
+.contact-form button {
+  font-size: 1.2em;
 }
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
-
-
-
+footer a {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
 
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation li:last-child{
 
-@media (max-width: 479px) {
-  .skills-description p {
-    width: 450px;
   }
-}
-
-/*
- Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
-*/
-
-
-@media (max-width: 767px) {
-  .skills-title h2 {
-    width: 400px;
+  .name p {
+    max-width: 760px;
   }
-  .portfolio-description ul li {
-    display: inline;
+  .skills p {
+    max-width: 760px;
   }
-  .connect {
-    float: left;
-    padding: 60px;
+  .portfolio-items {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
   }
-  .contact-form {
-    float: right;
-    margin-top: 0;
-    padding: 60px;
+  .contact {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 30px;
   }
-}
-
-/*
- Com uma largura mínima de 992 pixels. Monitores por exemplo.
-*/
-@media  (min-width: 768px) and (max-width: 991px) {
-  .skills {
-    position: relative;
-  }
-  .skills-title {
-    margin-left: 100px;
-    text-align: left;
-  }
-  .skills-title h2 {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-  }
-  .connect, .contact-form {
-    padding: 90px;
-  }
-}
-
-/*
- Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
-*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-@media (min-width: 1200px) {
-
 }
