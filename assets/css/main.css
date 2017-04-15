@@ -26,8 +26,10 @@ nav {
   background-color: #1B1E25;
 }
 .navigation {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 .navigation li {
   display: block;
@@ -44,9 +46,12 @@ nav {
   color: #f2f2f2;
 }
 .name {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   background-color: #1B1E25;
   color: #f2f2f2;
@@ -63,9 +68,12 @@ nav {
   padding: 20px;
 }
 .skills {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
 }
 .fa-code {
@@ -79,9 +87,12 @@ nav {
   padding: 20px;
 }
 .portfolio {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   background-color: #1B1E25;
   color: #f2f2f2;
@@ -92,9 +103,12 @@ nav {
   text-transform: uppercase;
 }
 .portfolio-items {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   margin: 20px 0;
 }
 .portfolio-items li a {
@@ -112,25 +126,34 @@ nav {
   color: #1B1E25;
 }
 .portfolio-thumbs {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 10px 0;
 }
 .portfolio-thumbs li {
   margin: 5px;
 }
 .contact {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   background-color: #2ABBAE;
 }
 .connect {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   margin: 20px 0;
 }
 .connect h2 {
@@ -146,9 +169,12 @@ nav {
   text-transform: uppercase;
 }
 .contact-form form{
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: stretch;
+      align-items: stretch;
   margin: 20px 0;
 }
 .contact-form input {
@@ -175,7 +201,8 @@ footer a {
 
 @media screen and (min-width: 768px) {
   .navigation {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
   .navigation li:last-child{
 
@@ -187,8 +214,10 @@ footer a {
     max-width: 760px;
   }
   .portfolio-items {
-    flex-direction: row;
-    justify-content: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
     width: 100%;
   }
   .portfolio-items li {
@@ -198,9 +227,12 @@ footer a {
     margin-right: 0;
   }
   .contact {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: stretch;
+        align-items: stretch;
     padding: 30px;
   }
 }
