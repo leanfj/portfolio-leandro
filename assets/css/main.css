@@ -188,8 +188,14 @@ footer a {
   }
   .portfolio-items {
     flex-direction: row;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: center;
+    width: 100%;
+  }
+  .portfolio-items li {
+    margin-right: 50px;
+  }
+  .portfolio-items li:last-child {
+    margin-right: 0;
   }
   .contact {
     flex-direction: row;
