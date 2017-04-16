@@ -18,11 +18,11 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("source/sass/*.sass")
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 4 version'],
             cascade: false
         }))
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest("assets/css"))
         .pipe(browserSync.stream());
 });
