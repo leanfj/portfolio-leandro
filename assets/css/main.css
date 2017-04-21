@@ -41,9 +41,16 @@ nav {
   padding: 15px;
   width: 70%;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
   text-transform: uppercase;
   color: #f2f2f2;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0,0,0,0);
+  transition: .6s all;
+
+}
+.navigation li a:hover{
+  border-bottom-color: #f2f2f2;:
 }
 .name {
   display: -ms-flexbox;
@@ -201,17 +208,31 @@ footer a {
 
 @media screen and (min-width: 768px) {
   .navigation {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(27, 30, 37, .5);
     -ms-flex-direction: row;
         flex-direction: row;
+
+
   }
   .navigation li:last-child{
 
   }
+  .name {
+    padding-top: 50px;
+  }
   .name p {
     max-width: 760px;
   }
+  .skills {
+    padding-top: 50px;
+  }
   .skills p {
     max-width: 760px;
+  }
+  .portfolio {
+    padding-top: 50px;
   }
   .portfolio-items {
     -ms-flex-direction: row;
@@ -233,6 +254,6 @@ footer a {
         justify-content: space-around;
     -ms-flex-align: stretch;
         align-items: stretch;
-    padding: 30px;
+    padding: 50px;
   }
 }

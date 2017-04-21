@@ -18,7 +18,7 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("source/sass/*.sass")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 4 version'],
             cascade: false

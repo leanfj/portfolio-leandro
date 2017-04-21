@@ -1,1 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700");*{padding:0;margin:0;box-sizing:border-box}a{text-decoration:none}ul li{list-style:none}body{font-family:"Source Code Pro",sans-serif}span{font-weight:200}.align-center{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;text-align:center}.navigation{position:fixed;top:0;width:100%;background-color:#1b1e25}.navigation li{display:block;width:70%;text-align:center}.navigation li a{display:block;padding:10px;margin-bottom:10px;color:#f2f2f2;border-bottom:1px solid #f2f2f2}.name{background-color:#1b1e25;color:#f2f2f2;height:100vh}.name h1{border:1px solid #f2f2f2;padding:10px;margin-top:100px}.name h2{width:70%;margin-bottom:20px}.name p{text-align:justify;padding:0 20px}
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+body {
+  font-family: "Source Code Pro", sans-serif; }
+
+span {
+  font-weight: 200; }
+
+.align-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1b1e25; }
+  .navigation li {
+    display: block;
+    width: 70%;
+    text-align: center; }
+    .navigation li a {
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #f2f2f2;
+      border-bottom: 1px solid #f2f2f2; }
+
+.name {
+  background-color: #1b1e25;
+  color: #f2f2f2;
+  height: 100vh; }
+  .name h1 {
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    margin-top: 100px; }
+  .name h2 {
+    width: 70%;
+    margin-bottom: 20px; }
+  .name p {
+    text-align: justify;
+    padding: 0 20px; }
