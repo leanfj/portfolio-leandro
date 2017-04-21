@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var cssc = require('gulp-css-condense');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -11,7 +12,8 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch("source/sass/*.sass", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("**/*.html").on('change', browserSync.reload);
+    gulp.watch("**/*.css").on('change', browserSync.reload);
     gulp.watch("**/*.js").on('change', browserSync.reload);
 });
 
@@ -25,6 +27,16 @@ gulp.task('sass', function() {
         }))
         .pipe(gulp.dest("assets/css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('condense', function() {
+    return gulp.src('assets/css/style.css')
+        .pipe(cssc({
+            consolidateViaDeclarations: true,
+            consolidateViaSelectors: false,
+            consolidateMediaQueries: true
+        }))
+        .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('default', ['serve']);
