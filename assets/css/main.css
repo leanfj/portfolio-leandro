@@ -92,6 +92,7 @@ nav {
 .skills p {
   text-align: justify;
   padding: 20px;
+  margin-bottom: 50px;
 }
 .portfolio {
   display: -ms-flexbox;
@@ -103,6 +104,11 @@ nav {
   text-align: center;
   background-color: #1B1E25;
   color: #f2f2f2;
+}
+.portfolio-sec {
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  margin-top: 50px;
 }
 .portfolio h2 {
   margin: 20px 0;
@@ -132,6 +138,11 @@ nav {
   background-color: #f2f2f2;
   color: #1B1E25;
 }
+.last-works p {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 30px;
+}
 .portfolio-thumbs {
   display: -ms-flexbox;
   display: flex;
@@ -139,10 +150,14 @@ nav {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 .portfolio-thumbs li {
-  margin: 5px;
+  margin: 10px;
+}
+.portfolio-thumbs li a img:hover {
+  transform: scale(1.05);
+  transition: all .3s;
 }
 .contact {
   display: -ms-flexbox;
@@ -172,6 +187,10 @@ nav {
   margin: 10px 0;
   font-size: 1.5em;
 }
+.connect-items li:hover {
+  transform: scale(1.05);
+  transition: all .3s;
+}
 .contact-form h3 {
   text-transform: uppercase;
 }
@@ -186,14 +205,26 @@ nav {
 }
 .contact-form input {
   margin: 5px 0;
-  font-size: 1.2em;
+  padding: 5px;
+  font-size: 1.1em;
+  line-height: 2;
+  background: none;
+  border: 2px solid #f2f2f2;
 }
 .contact-form textarea {
+  padding: 5px;
   font-size: 1.2em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 2;
+  background: none;
+  border: 2px solid #f2f2f2;
+  resize: vertical;
 }
 .contact-form button {
   font-size: 1.2em;
+  line-height: 2;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 footer {
   text-align: center;
@@ -216,9 +247,6 @@ footer a {
 
 
   }
-  .navigation li:last-child{
-
-  }
   .name {
     padding-top: 50px;
   }
@@ -230,6 +258,10 @@ footer a {
   }
   .skills p {
     max-width: 760px;
+  }
+  .portfolio-sec {
+    padding: 30px;
+    margin-bottom: 20px;
   }
   .portfolio {
     padding-top: 50px;
@@ -247,6 +279,7 @@ footer a {
   .portfolio-items li:last-child {
     margin-right: 0;
   }
+
   .contact {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -255,5 +288,8 @@ footer a {
     -ms-flex-align: stretch;
         align-items: stretch;
     padding: 50px;
+  }
+  .contact-form form {
+    width: 400px;
   }
 }
