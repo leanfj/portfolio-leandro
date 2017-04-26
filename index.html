@@ -18,7 +18,7 @@
         <li><a href="#about">Sobre</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#portfolio">Portifólio</a></li>
-        <li><a href="#contact">Conexões e contato</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
     <div class="name align-center">
@@ -75,11 +75,14 @@
         <div class="contact-form">
           <h3>Quer <span>mais detalhes</span></h3>
           <h3><span>Entre</span> em contato</h3>
-          <form action="https://formspree.io/leanfj@hotmail.com" method="post">
+          <form action="https://formspree.io/leanfj@hotmail.com" method="POST">
             <input type="text" name="name" value="" placeholder="Nome">
             <input type="email" name="_replyto" value="" placeholder="Email">
-            <textarea rows="5" cols="30" placeholder="Digite sua mensagem"></textarea>
-            <button type="submit" value="send">Enviar</button>
+            <input type="hidden" name="_subject" value="Novo contato">
+            <input type="hidden" name="_cc" value="leanfjdev@gmail.com">
+            <input type="text" name="_gotcha" style="display:none" >
+            <textarea rows="5" cols="30" placeholder="Digite sua mensagem" name="body"></textarea>
+            <button type="submit" value="Send">Enviar</button>
           </form>
         </div>
     </section>
