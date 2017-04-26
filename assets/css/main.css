@@ -241,7 +241,7 @@ footer a {
   .navigation {
     position: fixed;
     width: 100%;
-    background-color: rgba(27, 30, 37, .5);
+    background-color: rgba(27, 30, 37, .8);
     -ms-flex-direction: row;
         flex-direction: row;
 
