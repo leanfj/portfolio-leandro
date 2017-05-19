@@ -22,10 +22,41 @@ header {
   background-color: #1b1e25;
   color: #fff; }
 
-.navigation li {
-  padding: 10px;
-  width: 90%;
-  margin: 0 auto;
-  border-bottom: 1px solid #fff; }
-  .navigation li a {
-    color: #fff; }
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .navigation li {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff; }
+    .navigation li a {
+      color: #fff;
+      text-transform: uppercase; }
+
+@media (min-width: 480px) {
+  .navigation {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .navigation li {
+      width: 180px; } }
+
+.name {
+  margin-top: 50px;
+  padding: 10px; }
+  .name h1 {
+    max-width: 600px;
+    border: 1px solid #fff;
+    margin: 25px auto;
+    line-height: 1.5; }
+  .name h2 {
+    padding: 20px; }
+  .name p {
+    max-width: 600px;
+    margin: 25px auto; }

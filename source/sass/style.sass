@@ -5,21 +5,48 @@
 // GLOBALS
 body
   font-family: $fonts
-span 
+span
   font-weight: 200
 
 
 // HEADER
 header
+  
   text-align: center
   background-color: $bg-dark
   color: #fff
 
 .navigation
+  display: flex
+  flex-direction: column
   li
     padding: 10px
     width: 90%
     margin: 0 auto
     border-bottom: 1px solid #fff
-    a    
+    a
       color: #fff
+      text-transform: uppercase
+
+@media (min-width: $screen-xs)
+  .navigation
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    li
+      width: 180px
+
+
+.name
+  margin-top: 50px
+  padding: 10px
+  h1
+    max-width: 600px
+    border: 1px solid #fff
+    margin: 25px auto
+    line-height: 1.5
+  h2
+    padding: 20px
+  p
+    max-width: 600px
+    margin: 25px auto
