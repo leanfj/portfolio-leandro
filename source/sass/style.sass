@@ -1,43 +1,25 @@
 @import reset
 @import variables
 
+
+// GLOBALS
 body
   font-family: $fonts
-span
+span 
   font-weight: 200
 
-.align-center
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    text-align: center
+
+// HEADER
+header
+  text-align: center
+  background-color: $bg-dark
+  color: #fff
+
 .navigation
-  position: fixed
-  top: 0
-  width: 100%
-  background-color: $background-dark
   li
-    display: block
-    width: 70%
-    text-align: center
-    a
-      display: block
-      padding: 10px
-      margin-bottom: 10px
-      color: #f2f2f2
-      border-bottom: 1px solid #f2f2f2
-.name
-  background-color: $background-dark
-  color: #f2f2f2
-  height: 100vh
-  h1
-    border: 1px solid #f2f2f2
     padding: 10px
-    margin-top: 100px
-  h2
-    width: 70%
-    margin-bottom: 20px
-  p
-    text-align: justify
-    padding: 0 20px
+    width: 90%
+    margin: 0 auto
+    border-bottom: 1px solid #fff
+    a    
+      color: #fff
