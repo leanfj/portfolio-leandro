@@ -155,9 +155,12 @@ nav {
 .portfolio-thumbs li {
   margin: 10px;
 }
+.portfolio-thumbs li a img{
+  transition: all .3s;
+}
 .portfolio-thumbs li a img:hover {
   transform: scale(1.05);
-  transition: all .3s;
+
 }
 .contact {
   display: -ms-flexbox;
@@ -186,10 +189,11 @@ nav {
 .connect-items li{
   margin: 10px 0;
   font-size: 1.5em;
+  transition: all .3s;
 }
 .connect-items li:hover {
   transform: scale(1.05);
-  transition: all .3s;
+
 }
 .contact-form h3 {
   text-transform: uppercase;
